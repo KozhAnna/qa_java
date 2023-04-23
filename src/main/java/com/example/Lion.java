@@ -2,12 +2,12 @@ package com.example;
 
 import java.util.List;
 
-public class Lion {
+public class Lion extends Feline {
 
-    private boolean hasMane;
-    private IFeline feline;
+    final private boolean hasMane;
+    final private Feline feline;
 
-    public Lion(String sex, IFeline feline) throws Exception {
+    public Lion(String sex, Feline feline) throws Exception {
         if ("Самец".equals(sex)) {
             this.hasMane = true;
         } else if ("Самка".equals(sex)) {
